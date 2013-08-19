@@ -1,0 +1,26 @@
+.clear {
+     clear: both;
+}
+/*movie page*/
+button {
+  padding: 8px 24px 9px;
+  border-radius: 5px;
+  font-size: 17px;
+  background-color: orange;
+
+}
+
+dd,dt {
+  line-height: 30px;
+  font-size: 21px;
+}
+
+.footer{
+  text-align: center;
+}
+
+img {
+  height :200px;
+  width: 200px;
+  margin: 10px;
+}

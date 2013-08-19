@@ -1,0 +1,27 @@
+
+<div class="container">
+  <form action="/new" method="get">
+    <% @result.each do |row| %>
+      <div class="container">
+        <div class="row">
+          <div class="span4">
+            <img src = <%= row['photo'] %> >
+          </div>
+           <div class="span8">
+            <dl class="dl-horizontal">
+              <dt>Name: </dt>
+              <dd><%= row['name'] %></dd>
+              <dt>Age: </dt>
+              <dd><%= row['age'] %></dd>
+              <dt>Gender: </dt>
+              <dd><%= row['gender'] %></dd>
+              <dt>Facebook: </dt>
+              <dd>
+                <a href= "<%= row['facebook'] %>"> Facebook Link </a>
+              </dd>
+            </dl>
+        </div>
+      </div>
+    <% end %>
+  </form>
+</div>
